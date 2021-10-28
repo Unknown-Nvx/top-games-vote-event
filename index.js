@@ -2,7 +2,7 @@ const { Client, Collection } = require("discord.js");
 const { prefix, token } = require("./config.json");
 const { Intents } = require('discord.js');
 const Discord = require("discord.js");
-const bot = new Discord.Client({ ws: { intents: Intents.ALL } });
+const bot = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
 bot.prefix = prefix;
 bot.commands = new Collection();
