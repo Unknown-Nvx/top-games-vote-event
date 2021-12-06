@@ -1,22 +1,17 @@
 {
   "name": "discord-bot-skeleton",
   "version": "1.0.0",
-  "description": "Basic code to create a Discord Bot, with messages, events and commands handlers.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Unknown-Nvx/discord-bot-skeleton.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Unknown-Nvx/discord-bot-skeleton/issues"
-  },
-  "homepage": "https://github.com/Unknown-Nvx/discord-bot-skeleton#readme",
   "dependencies": {
-     "discord.js": "^12.5.3"
+    "discord.js": "^12.5.3"
+  },
+  "script":{
+    "start": "node index.js"
   }
 }
