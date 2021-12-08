@@ -11,6 +11,6 @@ module.exports = (bot, message, args) => {
         .addField('🚀   $command3', '```Lorem ipsum dolor sit amet.```', false)
         .addField('🛰️   $command4', '```Lorem ipsum dolor sit amet.```', false)
         
-        message.channel.send(helpEmbed);
+        message.channel.send({helpEmbed});
 
 }
