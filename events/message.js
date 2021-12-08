@@ -1,10 +1,11 @@
-module.exports = (bot, message) => {
+module.exports = (message, bot, args) => {
+      console.log(message);
       
-      if (!message.content.startsWith(bot.prefix) || message.author.bot) return;
+//       if (!message.content.startsWith(bot.prefix) || message.author.bot) return;
 
-      const args = message.content.slice(bot.prefix.length).trim().split(/ +/g);
-      const command = args.shift().toLowerCase();
+//       const args = message.content.slice(bot.prefix.length).trim().split(/ +/g);
+//       const command = args.shift().toLowerCase();
 
-if(bot.commands.has(command)) bot.commands.get(command)(bot, message, args);
+// if(bot.commands.has(command)) bot.commands.get(command)(bot, message, args);
 
      }
