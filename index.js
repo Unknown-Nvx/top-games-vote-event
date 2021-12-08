@@ -9,13 +9,11 @@ bot.commands = new Collection();
 
 //bot.commands.set("help", require("./commands/help.js"));
 
-bot.on('message', msg => {
-
-     msg.reply("Pong!") 
-   }
+bot.on('message', msg => { 
+     msg.reply("Pong!")
 });
 
 bot.on("ready", () => require("./events/ready.js")());
-//bot.on("message", message => require("./events/message.js")(message));
+//bot.on("message", messag)) => require("./events/message.js")(message));
 
 bot.login(process.env.TOKEN);
