@@ -1,14 +1,14 @@
 const { Client, Intents, Collection } = require("discord.js");
 const { prefix, token } = require("./config.json");
 
-const bot = new Client({ intents: ["GUILDS", "GUILD_MESSAGES", "DIRECT_MESSAGES"], partials: ["CHANNEL"] });
+const bot = new Client({ intents: ["GUILDS", "GUILD_MESSAGES", "DIRECT_MESSAGES"]});
 
 bot.prefix = prefix;
 bot.commands = new Collection();
 
-bot.on('messageCreate', message => {
+bot.on("messageCreate", message => {
   if (message.content === 'ping') {
-    message.channel.send('pong');
+    message.channel.send('pongpong');
   }
 });
 
