@@ -7,8 +7,8 @@ bot.prefix = prefix;
 bot.commands = new Collection();
 
 bot.on("ready", () => require("./events/ready.js")());
-bot.on("messageCreate", (message) => require("./events/message.js")(message));
+bot.on("messageCreate", (message) => require("./events/message.js")(message, bot));
 
-//bot.commands.set("help", require("./commands/help.js"));
+bot.commands.set("help", require("./commands/help.js"));
 
 bot.login(process.env.TOKEN);
