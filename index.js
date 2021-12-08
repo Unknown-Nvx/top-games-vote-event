@@ -1,7 +1,7 @@
 const { Client, Intents, Collection } = require("discord.js");
 const { prefix, token } = require("./config.json");
 
-const bot = new Client({ intents: ["GUILDS", "GUILD_MESSAGES", "DIRECT_MESSAGES"] });
+const bot = new Client({ intents: ["GUILDS", "GUILD_MESSAGES", "DIRECT_MESSAGES"], partials: ["CHANNEL"] });
 
 bot.prefix = prefix;
 bot.commands = new Collection();
