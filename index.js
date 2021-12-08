@@ -10,10 +10,7 @@ bot.commands = new Collection();
 //bot.commands.set("help", require("./commands/help.js"));
 
 bot.on('message', msg => {
-   if (msg.author.bot) return;
-   if (msg.content.startsWith(settings.prefix)) return;
 
-   if (msg.content.startsWith(settings.prefix + "ping")) {
      msg.reply("Pong!") 
    }
 });
