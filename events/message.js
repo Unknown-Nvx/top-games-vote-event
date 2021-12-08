@@ -1,4 +1,4 @@
-module.exports = (message, bot, args) => {
+module.exports = (message) => {
       
       if (!message.content.startsWith(bot.prefix) || message.author.bot) return;
 
