@@ -1,7 +1,7 @@
 {
   "name": "discord-bot-skeleton",
   "version": "1.0.0",
-    "engines": {
+  "engines": {
     "node": "16.x"
   },
   "description": "",
@@ -12,9 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^13.3.1"
+    "discord.js": "^13.3.1",
+    "steamid": "^2.0.0"
   },
-  "script":{
+  "script": {
     "start": "node index.js"
   }
 }
