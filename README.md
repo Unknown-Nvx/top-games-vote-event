@@ -1,4 +1,4 @@
-# What is this for ?
+## What is this for ?
 
 🇫🇷 -> Récupère l'event de vote sur la plateforme [top-serveurs.net](https://top-serveurs.net/) grace au webhook Discord.
 
