@@ -10,7 +10,7 @@ module.exports = (vote, bot) => {
         const steamid = new steamidChecker(steamid64);
         const isSteamidValid = steamid.isValid();
 
-        if (isSteamidValid) //Db.addVote(steamid); # GIVE THE PLAYER A REWARD FOR HIS VOTE
+        if (isSteamidValid) //Db.addVote(steamid);
     }
 
 }
